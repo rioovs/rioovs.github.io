@@ -12,18 +12,18 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://rio-portfolio-one.vercel.app/",
+  site: "rioovs.github.io/",
   integrations: [sitemap(), robotsTxt({
-    sitemap: ["https://rio-portfolio-one.vercel.app/sitemap-index.xml", "https://rio-portfolio-one.vercel.app/sitemap-0.xml"]
+    sitemap: ["rioovs.github.io/sitemap-index.xml", "rioovs.github.io/sitemap-0.xml"]
   })
-  , solidJs(), UnoCSS({
-    injectReset: true
-  }), icon(), svelte()],
+    , solidJs(), UnoCSS({
+      injectReset: true
+    }), icon(), svelte()],
   markdown: {
     remarkPlugins: [remarkReadingTime]
   },
-  output: "server",
-  adapter: vercel(),
+  // output: "server",
+  // adapter: vercel(),
   vite: {
     assetsInclude: "**/*.riv"
   }
