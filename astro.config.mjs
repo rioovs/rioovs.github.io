@@ -13,7 +13,7 @@ import vercel from "@astrojs/vercel/serverless";
 // https://astro.build/config
 export default defineConfig({
   site: 'rioovs.github.io',
-  base: 'my-repo',
+  // base: 'my-repo',
   integrations: [sitemap(), robotsTxt({
     sitemap: ["rioovs.github.io/sitemap-index.xml", "rioovs.github.io/sitemap-0.xml"]
   })
