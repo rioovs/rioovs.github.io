@@ -22,6 +22,7 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkReadingTime]
   },
+  // For Vercel
   // output: "server",
   // adapter: vercel(),
   vite: {
